@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? "https://yourlunchbox.ca"),
   title: { default: "YourLunchbox | High-protein meal prep, delivered in downtown Toronto", template: "%s | YourLunchbox" },
   description: "Chef-cooked, high-protein lunches and dinners made in Canada and delivered fresh in downtown Toronto. Full macros on every meal. Ready in 2 minutes.",
+  // Remove this line at launch so search engines can list the site.
+  robots: { index: false, follow: false },
   openGraph: { type: "website", locale: "en_CA", siteName: "YourLunchbox", images: [{ url: "/og.png", width: 1200, height: 630, alt: "YourLunchbox. You lift. We prep." }] },
   twitter: { card: "summary_large_image" },
 };

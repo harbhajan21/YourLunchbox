@@ -23,6 +23,8 @@ The site exports to static files in `out/`. Every push to `main` deploys to GitH
 
 ## Before launch
 
+- Search engines are blocked. Remove `robots` from `src/app/layout.tsx` when ready.
+
 - Payments: replace the card fields in `StepCheckout.tsx` with Stripe Elements and move `lib/checkout.ts` to a backend (GitHub Pages cannot run one).
 - Database and sign-in: orders currently live only in the visitor's browser.
 - Reviews in `data/reviews.ts` are samples. Replace them, then flip `REVIEWS_ARE_SAMPLES`.
